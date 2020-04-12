@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="demo/demo.png" />
+</p>
 <h1 align="center">EmigaLogger for Browsers</h1>
 <div align="center">
 EmigaLogger combines several modules to send valuable client-side valuable information to a database
