@@ -1,0 +1,21 @@
+{
+  "name": "emiga-logger",
+  "version": "0.1.0",
+  "description": "Log everything",
+  "main": "src/main.js",
+  "scripts": {
+    "rollup": "rollup --config",
+    "uglifyjs": "uglifyjs ./build/main.js ./build/EmigaCookies.js ./build/EmigaData.js ./build/EmigaInit.js ./build/EmigaSelector.js ./build/EmigaToken.js -o ./dist/EmigaLogger.min.js -c -m --source-map \"filename='./dist/EmigaLogger.min.js.map'\"",
+    "build": "npm run rollup && npm run uglifyjs"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "author": "Emin Muhammadi <muemin17631@sabah.edu.az> (https://github.com/eminmuhammadi)",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "2.6.0",
+    "uglify-es": "3.3.9",
+    "uglify-js": "3.8.1"
+  }
+}

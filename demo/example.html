@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button logger by EmigaLogger</title>
+</head>
+<body>
+<h1>Hello World</h1>
+<script type="text/javascript" src="../dist/EmigaLogger.min.js"></script>
+<script type="text/javascript">
+    (new EmigaInit((e)=> {
+        (new EmigaLogger()).Call(()=>{
+            const Log = (new EmigaSelector()).Text((new EmigaSelector()).Select('h1'));
+            (new EmigaData()).Send(`https://example.com?text=${Log}`,{method: 'GET'});
+        });
+    }));
+</script>
+</body>
+</html>

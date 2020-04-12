@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button logger by EmigaLogger</title>
+</head>
+<body>
+
+<button id="button">Button</button>
+
+<script type="text/javascript" src="../dist/EmigaLogger.min.js"></script>
+<script type="text/javascript">
+    (new EmigaInit((e)=> {
+        const Data  = (new EmigaData());
+        const Token = (new EmigaCookies()).Get('X-UUID') || (new EmigaToken()).uuid();
+
+        const Button  = (new EmigaSelector()).Select('#button');
+        (new EmigaLogger()).Log(Button,'click',(e)=>{
+            e.preventDefault();
+            Data.Send('https://example.com',{
+                method: 'POST',
+                headers: {
+                    'X-UUID': Token
+                },
+                body: JSON.stringify({
+                    uuid   : Token,
+                    data   : 'button_pressed',
+                    cookie : (new EmigaCookies()).Cookie('X-UUID',(new EmigaToken()).uuid(),30)
+                })
+            });
+        });
+    }));
+</script>
+</body>
+</html>
