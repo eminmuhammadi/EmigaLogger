@@ -15,7 +15,7 @@
 
 ## Install
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@v1.0.1/dist/EmigaLogger.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@v1.0.2/dist/EmigaLogger.min.js"></script>
 ```
 
 ## Usage
