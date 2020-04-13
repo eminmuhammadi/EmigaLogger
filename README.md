@@ -8,8 +8,8 @@
   
 <div align="center" style="display:none !important;text-align:center;">
 
-![GitHub](https://img.shields.io/github/license/eminmuhammadi/EmigaLogger)
-![GitHub file size in bytes](https://img.shields.io/github/size/eminmuhammadi/EmigaLogger/dist/EmigaLogger.min.js)
+![](https://img.shields.io/github/license/eminmuhammadi/EmigaLogger)
+![](https://img.shields.io/github/size/eminmuhammadi/EmigaLogger/dist/EmigaLogger.min.js)
 
 </div>
 </h1>
