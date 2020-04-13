@@ -4,11 +4,10 @@
 
 
 
-<h1 align="center">EmigaLogger for Browsers
+<h1 align="center">EmigaLogger for Browsers (v1.0.2)
   
 <div align="center" style="display:none !important;text-align:center;">
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/eminmuhammadi/EmigaLogger)
 ![GitHub](https://img.shields.io/github/license/eminmuhammadi/EmigaLogger)
 ![GitHub file size in bytes](https://img.shields.io/github/size/eminmuhammadi/EmigaLogger/dist/EmigaLogger.min.js)
 
