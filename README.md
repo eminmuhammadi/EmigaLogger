@@ -2,16 +2,22 @@
   <img src="demo/demo.png" />
 </p>
 
-<h1 align="center">EmigaLogger for Browsers</h1>
 
-<div align="center">
+
+<h1 align="center">EmigaLogger for Browsers
+  
+<div align="center" style="display:none !important;text-align:center;">
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/eminmuhammadi/EmigaLogger)
 ![GitHub](https://img.shields.io/github/license/eminmuhammadi/EmigaLogger)
 ![GitHub file size in bytes](https://img.shields.io/github/size/eminmuhammadi/EmigaLogger/dist/EmigaLogger.min.js)
 
-<p align="center">EmigaLogger combines several modules to send a valuable client-side information to the database</p>
 </div>
+</h1>
+
+<p align="center">
+EmigaLogger combines several modules to send a valuable client-side information to the database
+</p>
 
 ## Install
 ```html
