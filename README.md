@@ -10,7 +10,7 @@ EmigaLogger combines several modules to send a valuable client-side information 
 
 ## Install
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@master/dist/EmigaLogger.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@v1.0.0/dist/EmigaLogger.min.js"></script>
 ```
 
 ## Usage
