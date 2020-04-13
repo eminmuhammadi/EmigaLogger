@@ -1,11 +1,11 @@
 {
   "name": "emiga-logger",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "Log everything",
   "main": "src/main.js",
   "scripts": {
     "rollup": "rollup --config",
-    "uglifyjs": "uglifyjs ./build/main.js ./build/EmigaCookies.js ./build/EmigaData.js ./build/EmigaInit.js ./build/EmigaSelector.js ./build/EmigaToken.js -o ./dist/EmigaLogger.min.js -c -m --source-map \"filename='./dist/EmigaLogger.min.js.map'\"",
+    "uglifyjs": "uglifyjs ./build/main.js ./build/EmigaCookies.js ./build/EmigaData.js ./build/EmigaInit.js ./build/EmigaSelector.js ./build/EmigaToken.js --ie8 -o ./dist/EmigaLogger.min.js -c -m --source-map \"filename='./dist/EmigaLogger.min.js.map'\"",
     "build": "npm run rollup && npm run uglifyjs"
   },
   "engines": {

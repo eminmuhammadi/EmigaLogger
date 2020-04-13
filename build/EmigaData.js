@@ -4,6 +4,10 @@
 	(global = global || self, global.EmigaData = factory());
 }(this, (function () { 'use strict';
 
+	/***
+	 *  EmigaData
+	 *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+	 */
 	class EmigaData extends EmigaLogger {
 		constructor () {
 			super();

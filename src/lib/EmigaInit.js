@@ -1,3 +1,7 @@
+/***
+ *  EmigaInit
+ *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+ */
 (function(exports, d) {
   /**
    *

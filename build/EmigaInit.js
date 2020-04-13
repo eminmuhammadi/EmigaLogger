@@ -4,6 +4,10 @@
   (global = global || self, global.EmigaInit = factory());
 }(this, (function () { 'use strict';
 
+  /***
+   *  EmigaInit
+   *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+   */
   (function(exports, d) {
     /**
      *

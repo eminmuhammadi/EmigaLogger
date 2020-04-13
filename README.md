@@ -5,12 +5,17 @@
 <h1 align="center">EmigaLogger for Browsers</h1>
 
 <div align="center">
-EmigaLogger combines several modules to send a valuable client-side information to the database
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/eminmuhammadi/EmigaLogger)
+![GitHub](https://img.shields.io/github/license/eminmuhammadi/EmigaLogger)
+![GitHub file size in bytes](https://img.shields.io/github/size/eminmuhammadi/EmigaLogger/dist/EmigaLogger.min.js)
+
+<p align="center">EmigaLogger combines several modules to send a valuable client-side information to the database</p>
 </div>
 
 ## Install
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@v1.0.0/dist/EmigaLogger.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@v1.0.1/dist/EmigaLogger.min.js"></script>
 ```
 
 ## Usage
@@ -58,23 +63,23 @@ For examples  [./demo/](demo)
 |-------	|------	|---------	|-------------	|
 | query     |      	|         	|             	|
 
-#### EmigaSelector().Submit(query)
+#### EmigaSelector().Submit(element)
 
 | Param 	| Type 	| Value 	| Description 	|
 |-------	|------	|---------	|-------------	|
-| query     |      	|         	|             	|
+| element   |      	|         	|             	|
 
-#### EmigaSelector().Value(query)
-
-| Param 	| Type 	| Value 	| Description 	|
-|-------	|------	|---------	|-------------	|
-| query     |      	|         	|             	|
-
-#### EmigaSelector().Text(query)
+#### EmigaSelector().Value(element)
 
 | Param 	| Type 	| Value 	| Description 	|
 |-------	|------	|---------	|-------------	|
-| query     |      	|         	|             	|
+| element   |      	|         	|             	|
+
+#### EmigaSelector().Text(element)
+
+| Param 	| Type 	| Value 	| Description 	|
+|-------	|------	|---------	|-------------	|
+| element   |      	|         	|             	|
 
 ### new EmigaData()
 #### EmigaData().Serialize(form)

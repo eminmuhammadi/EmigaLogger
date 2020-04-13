@@ -1,3 +1,7 @@
+/***
+ *  EmigaSelector
+ *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+ */
 class EmigaSelector extends EmigaLogger {
 	constructor () {
 		super();
@@ -15,32 +19,32 @@ class EmigaSelector extends EmigaLogger {
 
 	/**
 	 *
-	 * @param query
+	 * @param element
 	 * @returns {*}
 	 * @constructor
 	 */
-	Submit(query){
-		return query.requestSubmit();
+	Submit(element){
+		return element.requestSubmit();
 	}
 
 	/**
 	 *
-	 * @param query
+	 * @param element
 	 * @returns {*}
 	 * @constructor
 	 */
 	Value(query){
-		return query.value;
+		return element.value;
 	}
 
 	/**
 	 *
-	 * @param query
+	 * @param element
 	 * @returns {string}
 	 * @constructor
 	 */
-	Text(query){
-		return query.textContent;
+	Text(element){
+		return element.textContent;
 	}
 }
 

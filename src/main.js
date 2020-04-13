@@ -1,9 +1,9 @@
-/**
-  For Documentation
-  Query https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
-  Dom Ready https://stackoverflow.com/questions/2304941/what-is-the-non-jquery-equivalent-of-document-ready
-  Cookies https://javascript.info/cookie
-*/
+/***
+ *  EmigaLogger
+ *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+ *  @url https://github.com/eminmuhammadi/EmigaLogger
+ *  @license MIT (https://github.com/eminmuhammadi/EmigaLogger/blob/master/LICENSE)
+ */
 "use strict";
 class EmigaLogger {
 

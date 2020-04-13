@@ -1,3 +1,7 @@
+/***
+ *  EmigaCookies
+ *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+ */
 class EmigaCookies extends EmigaLogger {
 	constructor() {
 		super();

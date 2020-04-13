@@ -4,6 +4,10 @@
 	(global = global || self, global.EmigaCookies = factory());
 }(this, (function () { 'use strict';
 
+	/***
+	 *  EmigaCookies
+	 *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+	 */
 	class EmigaCookies extends EmigaLogger {
 		constructor() {
 			super();

@@ -1,3 +1,7 @@
+/***
+ *  EmigaToken
+ *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
+ */
 class EmigaToken extends EmigaLogger{
 	constructor () {
 		super();
