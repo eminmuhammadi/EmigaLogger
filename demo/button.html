@@ -50,7 +50,7 @@
                 body: JSON.stringify({
                     uuid   : Token,
                     data   : 'button_pressed',
-                    cookie : (new EmigaCookies()).Cookie('X-UUID',(new EmigaToken()).uuid(),30)
+                    cookie : (new EmigaCookies()).Cookie('X-UUID', Token ,30)
                 })
             });
         });

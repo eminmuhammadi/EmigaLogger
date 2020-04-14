@@ -54,7 +54,7 @@
 				body: JSON.stringify({
 					uuid   : Token,
 					data   : Data.Serialize(Form),
-					cookie : (new EmigaCookies()).Cookie('X-UUID',(new EmigaToken()).uuid(),30)
+					cookie : (new EmigaCookies()).Cookie('X-UUID', Token ,30)
 				})
 			});
 			e.stopPropagation();
