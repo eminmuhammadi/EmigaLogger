@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="author" content="Emin Muhammadi, and EmigaLogger contributors" />
 	<title>Form logger by EmigaLogger</title>
 </head>
 <body>
@@ -13,13 +16,36 @@
 
 <script type="text/javascript" src="../dist/EmigaLogger.min.js"></script>
 <script type="text/javascript">
+	/**
+	 *  Wait for document loaded
+	 *  Url (https://example.com) for demo purposes
+	 */
 	(new EmigaInit((e)=> {
+		/**
+		 *  Data Library
+		 */
 		const Data  = (new EmigaData());
+		/**
+		 * Get unique token for identify request
+		 * @type {any|string|void|*}
+		 */
 		const Token = (new EmigaCookies()).Get('X-UUID') || (new EmigaToken()).uuid();
 
+		/**
+		 * Select Form element
+		 * @type {any|any}
+		 */
 		const Form  = (new EmigaSelector()).Select('form');
+
+		/**
+		 *  Start loggin when form has been submitted
+		 */
 		(new EmigaLogger()).Log(Form,'submit',(e)=>{
 			e.preventDefault();
+
+			/**
+			 * Send data to your own server
+			 */
 			Data.Send('https://example.com',{
 				method: 'POST',
 				headers: {
@@ -32,6 +58,10 @@
 				})
 			});
 			e.stopPropagation();
+
+			/**
+			 *  Submit form which mentioned on action
+			 */
 			(new EmigaSelector()).Submit(Form);
 		});
 	}));

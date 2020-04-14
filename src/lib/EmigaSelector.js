@@ -33,7 +33,7 @@ class EmigaSelector extends EmigaLogger {
 	 * @returns {*}
 	 * @constructor
 	 */
-	Value(query){
+	Value(element){
 		return element.value;
 	}
 

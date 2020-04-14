@@ -39,7 +39,7 @@
 		 * @returns {*}
 		 * @constructor
 		 */
-		Value(query){
+		Value(element){
 			return element.value;
 		}
 

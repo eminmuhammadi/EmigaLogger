@@ -1,6 +1,6 @@
 {
   "name": "emiga-logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Log everything",
   "main": "src/main.js",
   "scripts": {

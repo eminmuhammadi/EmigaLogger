@@ -8,7 +8,7 @@
 	 *  EmigaLogger
 	 *  @author Emin Muhammadi (https://github.com/eminmuhammadi)
 	 *  @url https://github.com/eminmuhammadi/EmigaLogger
-	 *  @licence MIT (https://github.com/eminmuhammadi/EmigaLogger/blob/master/LICENSE)
+	 *  @license MIT (https://github.com/eminmuhammadi/EmigaLogger/blob/master/LICENSE)
 	 */
 	class EmigaLogger {
 

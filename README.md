@@ -4,7 +4,7 @@
 
 
 
-<h1 align="center">EmigaLogger for Browsers (v1.0.2)
+<h1 align="center">EmigaLogger for Browsers (v1.0.3)
   
 <div align="center" style="display:none !important;text-align:center;">
 
@@ -20,7 +20,7 @@ EmigaLogger combines several modules to send a valuable client-side information 
 
 ## Install
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@v1.0.2/dist/EmigaLogger.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eminmuhammadi/EmigaLogger@v1.0.3/dist/EmigaLogger.min.js"></script>
 ```
 
 ## Usage
