@@ -14,7 +14,7 @@
   "author": "Emin Muhammadi <muemin17631@sabah.edu.az> (https://github.com/eminmuhammadi)",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "2.6.0",
+    "rollup": "2.79.2",
     "uglify-es": "3.3.9",
     "uglify-js": "3.8.1"
   }
